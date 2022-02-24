@@ -1,1 +1,3 @@
-const flush = "poop";
+const flush: string = "poop";
+
+console.info("hello");

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+node "--experimental-loader=./loader.mjs --input-type=module" "./index.mjs"
+
+exit $?
