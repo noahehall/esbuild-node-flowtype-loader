@@ -2,15 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   esbuild: ^0.14.23
-  flow: ^0.2.3
-  flow-bin: ^0.172.0
-  flow-remove-types: ^2.172.0
 
 devDependencies:
   esbuild: 0.14.23
-  flow: 0.2.3
-  flow-bin: 0.172.0
-  flow-remove-types: 2.172.0
 
 packages:
 
@@ -210,45 +204,4 @@ packages:
       esbuild-windows-32: 0.14.23
       esbuild-windows-64: 0.14.23
       esbuild-windows-arm64: 0.14.23
-    dev: true
-
-  /flow-bin/0.172.0:
-    resolution: {integrity: sha512-v9KolEk3qd+wFc2ABPaSr5/7VWbHOjdAzRaWwynEtaeMcKN0awlx0Q7b71g/XgVf/fWMR+K8q+3s/TCH+Gky/Q==}
-    engines: {node: '>=0.10.0'}
-    hasBin: true
-    dev: true
-
-  /flow-parser/0.172.0:
-    resolution: {integrity: sha512-WWqgvuJgD9Y1n2su9D73m0g5kQ4XVl8Dwk6DeW5V6bjt4XMtVLzSHg35s3iiZOvShY+7w7l8FzlK81PGXRcIYQ==}
-    engines: {node: '>=0.4.0'}
-    dev: true
-
-  /flow-remove-types/2.172.0:
-    resolution: {integrity: sha512-EfHtwB48kgwQnU1ucNWVmEh+z2ubek9NWLkNb+9djaxRYijHl/YhuGut590ObHlz1wPaimUZcNyGi3kjBfSWZw==}
-    engines: {node: '>=4'}
-    hasBin: true
-    dependencies:
-      flow-parser: 0.172.0
-      pirates: 3.0.2
-      vlq: 0.2.3
-    dev: true
-
-  /flow/0.2.3:
-    resolution: {integrity: sha1-+Npl76JJEn7Jk3aiiJZXKpeV0a8=}
-    dev: true
-
-  /node-modules-regexp/1.0.0:
-    resolution: {integrity: sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
-  /pirates/3.0.2:
-    resolution: {integrity: sha512-c5CgUJq6H2k6MJz72Ak1F5sN9n9wlSlJyEnwvpm9/y3WB4E3pHBDT2c6PEiS1vyJvq2bUxUAIu0EGf8Cx4Ic7Q==}
-    engines: {node: '>= 4'}
-    dependencies:
-      node-modules-regexp: 1.0.0
-    dev: true
-
-  /vlq/0.2.3:
-    resolution: {integrity: sha512-DRibZL6DsNhIgYQ+wNdWDL2SL3bKPlVrRiBqV5yuMm++op8W4kGFtaQfCs4KEJn0wBZcHVHJ3eoywX8983k1ow==}
     dev: true
