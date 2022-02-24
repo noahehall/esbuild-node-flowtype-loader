@@ -6,7 +6,7 @@
     "NODE_OPTIONS": "--diagnostic-dir=\"/var/.nodeproto\" --report-compact --report-dir=\"/var/.nodeproto\" --report-filename=node-report --report-on-fatalerror --report-on-signal --report-signal=SIGUSR2 --report-uncaught-exception --pending-deprecation --trace-deprecation --trace-exit --trace-sigint --trace-warnings --unhandled-rejections=strict --enable-source-maps --experimental-abortcontroller --experimental-fetch --experimental-import-meta-resolve --experimental-json-modules --experimental-loader=\"./flow.mjs\" --experimental-modules --experimental-specifier-resolution=node --experimental-top-level-await --tls-max-v1.3 --tls-min-v1.3 --use-largepages=on"
   },
   "scripts": {
-    "build:node": "pnpm repo:rm:dist && NODE_ENV=production NODE_OPTIONS=\"$npm_package_config_NODE_OPTIONS\" node build.esbuild.config.mjs",
+    "build:node": "NODE_ENV=production NODE_OPTIONS=\"$npm_package_config_NODE_OPTIONS\" node build.esbuild.mjs",
     "build:cli": "NODE_ENV=production NODE_OPTIONS=\"$npm_package_config_NODE_OPTIONS\" esbuild --bundle index.mjs --outfile=index.js",
     "build:bin": "NODE_ENV=production NODE_OPTIONS=\"$npm_package_config_NODE_OPTIONS\" node ./node_modules/.bin/esbuild --bundle index.mjs --outfile=index.js"
   },

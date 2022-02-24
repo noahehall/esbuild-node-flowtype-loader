@@ -18,8 +18,8 @@ export async function load(url, context, defaultLoad) {
   console.info("\n\n @nodeproto: examing file", context, url);
 
   if (context.format !== "module")
-    // return defaultLoad(url, context, defaultLoad);
-    return defaultLoad(url, { format: "commonjs" }, defaultLoad);
+    return defaultLoad(url, context, defaultLoad);
+  // return defaultLoad(url, { format: "commonjs" }, defaultLoad);
 
   const { source } = await defaultLoad(url, context);
 

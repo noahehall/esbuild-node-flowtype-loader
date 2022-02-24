@@ -1,4 +1,4 @@
 // @flow
 
-// const poop: string = "flush";
-const poop = "flush";
+const poop: string = "flush";
+const flush = "poop";
